@@ -31,15 +31,18 @@ The project has born from my own needs ({read more}[http://fabiokung.com/2008/05
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<activesupport>, [">= 2.0.2"])
+      s.add_runtime_dependency(%q<jruby-rack>, ["~> 1.0.3"])
       s.add_development_dependency(%q<newgem>, [">= 1.4.1"])
       s.add_development_dependency(%q<hoe>, [">= 1.8.0"])
     else
       s.add_dependency(%q<activesupport>, [">= 2.0.2"])
+      s.add_dependency(%q<jruby-rack>, ["~> 1.0.3"])
       s.add_dependency(%q<newgem>, [">= 1.4.1"])
       s.add_dependency(%q<hoe>, [">= 1.8.0"])
     end
   else
     s.add_dependency(%q<activesupport>, [">= 2.0.2"])
+    s.add_dependency(%q<jruby-rack>, ["~> 1.0.3"])
     s.add_dependency(%q<newgem>, [">= 1.4.1"])
     s.add_dependency(%q<hoe>, [">= 1.8.0"])
   end

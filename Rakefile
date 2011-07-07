@@ -11,6 +11,7 @@ $hoe = Hoe.new('jetty-rails', JettyRails::VERSION) do |p|
   p.rubyforge_name       = p.name # TODO this is default value
   p.extra_deps         = [
     ['activesupport','>= 2.0.2'],
+    ['jruby-rack','~> 1.0.3'],
   ]
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"]
